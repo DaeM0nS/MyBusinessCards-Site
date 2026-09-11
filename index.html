@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <link rel="manifest" href="/MyBusinessCards-Site/manifest.webmanifest" />
+  <meta name="theme-color" content="#4f46e5" />
+
+  <link rel="apple-touch-icon" href="/MyBusinessCards-Site/icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="My Business Cards" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/MyBusinessCards-Site/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://js.puter.com/v2/">puter.quiet = true</script>
+  <!-- <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search)
+        var redirect = params.get('redirect')
+
+        if (redirect) {
+          window.history.replaceState(null, '', redirect)
+        }
+      })()
+  </script> -->
+  <script>
+      (function () {
+        var params = new URLSearchParams(
+          window.location.search,
+        );
+
+        var path = params.get('p');
+
+        if (!path) {
+          return;
+        }
+
+        var query = params.get('q');
+        var hash = params.get('h');
+
+        var restoredUrl =
+          '/MyBusinessCards-Site' +
+          path +
+          (query ? '?' + query : '') +
+          (hash ? '#' + hash : '');
+
+        window.history.replaceState(
+          null,
+          '',
+          restoredUrl,
+        );
+      })();
+  </script>
+  <title>MyBusinessCards</title>
+  <script type="module" crossorigin src="/MyBusinessCards-Site/assets/index-Cg7sREoc.js"></script>
+  <link rel="modulepreload" crossorigin href="/MyBusinessCards-Site/assets/dist-DFfStZti.js">
+  <link rel="modulepreload" crossorigin href="/MyBusinessCards-Site/assets/esm-o4Yg7JRv.js">
+  <link rel="stylesheet" crossorigin href="/MyBusinessCards-Site/assets/index-BLcvHjIN.css">
+<link rel="manifest" href="/MyBusinessCards-Site/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/MyBusinessCards-Site/registerSW.js" defer></script></head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
